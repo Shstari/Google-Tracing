@@ -13,30 +13,116 @@
       text-decoration: underline;
     }
     #top{
-      /*text-align: right;*/
-      float:right;
+      text-align: right;
+      margin: 15px;
+      /*float:right;*/
     }
     #top span{
       font-size: 13px;
       margin: 0px;
       margin-right: 10px;
     }
-    #menu:hover{
-      content: url("menu on.png");
-    }
-    img{
+    #top img{
       vertical-align: middle;
       margin-right: 10px;
       margin-bottom: 2px;
+
     }
-    </style>
+    #menu:hover{
+      content: url("on.png");
+    }
+    #logo{
+      text-align: center;
+      margin:70px;
+      margin-bottom:20px;
+    }
+    #search{
+      text-align: center;
+      position:relative;
+      margin-bottom:30px;
+    }
+    #search input{
+      width:480px;
+      height:45px;
+      font-size:14px;
+      padding: 5px 50px;
+      border-radius: 25px;
+      border: 1px lightgray solid;
+
+
+      background-image: url(zoom.png);
+      background-position: 24px center;
+      background-repeat: no-repeat;
+      background-size: 16px;
+
+              }
+    #search input:hover{
+      border:none;
+      box-shadow: 0 0 10px lightgray;
+    }
+    /*.searchi{
+      position:absolute;
+      bottom:15px;
+      left:500px;
+      width:15px;
+      border:pink 1px solid;
+    }*/
+    #button{
+      text-align: center;
+      vertical-align: middle;
+      margin-bottom: 22px;
+    }
+    #button input{
+      height: 36px;
+      border: none;
+      background-color: ghostwhite;
+      color: black;
+      padding: 8px 20px;
+      margin: 0px 4px;
+      border-radius: 4px;
+    }
+    #button input:hover{
+      border:lightgray 1px solid;
+      box-shadow: 0px 1px 2px lightgray;
+      cursor: pointer;
+    }
+    #service{
+      text-align: center;
+      font-size: 14px;
+    }
+    .lang{
+      color: mediumblue;
+    }
+    .lang:hover{
+      color: mediumblue;
+    }
+      </style>
   </head>
   <body>
-    <div id="top">
-      <a href="#"><span >Gmail</span></a>
-      <a href="#"><span >이미지</span></a>
-      <a href="#"><img id="menu" src="menu off.png" height="15px"></a>
-      <a href="#"><img src="unnamed.png" height="30px" style="border-radius:50%;"></a>
+    <div id="top" style="border:">
+      <a href="#"><span>Gmail</span></a>
+      <a href="#"><span>이미지</span></a>
+      <a href="#" title="Songle 앱"><img id="menu" src="off.png"></a>
+      <a href="#" title="Songle 계정: Dan&#10;***@gmail.com"><img src="unnamed.png" width="auto" height="34px" style="border-radius:50%;"></a>
+    </div>
+
+    <div id="logo">
+      <a href="index.html" title="송글 메인"><img src="songle.png" width="auto" height="120px" style="border:"></a>
+    </div>
+
+    <div id="search" style="border:">
+      <input type="search" placeholder="Songle 검색 또는 URL 입력">
+      <!--<img src="keyboard.png" class="searchi" >
+      <img src="voice.png" class="searchi">-->
+    </div>
+
+    <div id="button">
+      <a href="#"><input type="button" value="Songle 검색"></a>
+      <a href="#"><input type="button" value="I'm Feeling Lucky"></a>
+    </div>
+
+    <div id="service">
+      <p>Google 제공 서비스: <a href="#" class="lang">English</a> <a href="#" class="lang">中文 ( 繁體 )</a></p>
     </div>
 
   </body>
