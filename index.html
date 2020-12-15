@@ -74,7 +74,7 @@
     }
     #button input{
       height: 36px;
-      border: none;
+      border: white 1px solid;
       background-color: ghostwhite;
       color: black;
       padding: 8px 20px;
@@ -96,7 +96,42 @@
     .lang:hover{
       color: mediumblue;
     }
-      </style>
+    #bottom{
+      position: fixed;
+      bottom: 0;
+      left:0;
+      right:0;
+      background-color: whitesmoke;
+        }
+    #country{
+      border: 1px gainsboro solid;
+      height: 40px;
+        }
+    #country span{
+      display:inline-block;
+      vertical-align: middle;
+      font-size: 15px;
+      color: dimgray;
+      height: 20px;
+      padding: 10px 20px;
+    }
+    #etc{
+      border: 1px gainsboro solid;
+      border-top:none;
+      height: 40px;
+    }
+    #etc a{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color: dimgray;
+      height: 20px;
+      padding: 10px 10px;
+    }
+
+
+
+    </style>
   </head>
   <body>
     <div id="top" style="border:">
@@ -122,8 +157,17 @@
     </div>
 
     <div id="service">
-      <p>Google 제공 서비스: <a href="#" class="lang">English</a> <a href="#" class="lang">中文 ( 繁體 )</a></p>
+      <p>Songle 제공 서비스: <a href="#" class="lang">English</a> <a href="#" class="lang">中文 ( 繁體 )</a></p>
     </div>
 
+  <div id="bottom">
+    <div id="country">
+      <span>대한민국</span>
+    </div>
+    <div id="etc">
+      <a href="#" style="padding-left:20px;"><span>광고</span></a><a href="#"><span>비즈니스</span></a><a href="#"><span>Songle 정보</span></a><a href="#"><span>검색의 원리</span></a>
+      <a href="#"><span>개인정보처리방침</span></a><a href="#"><span>약관</span></a><a href="#"><span>설정</span></a>
+    </div>
+  </div>
   </body>
 </html>
